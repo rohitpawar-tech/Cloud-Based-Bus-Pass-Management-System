@@ -123,6 +123,7 @@ Contributors can further enhance this system in the following areas:
 7.   Add export functionality (PDF pass download).
 8.  Introduce payment gateway integration (Razorpay / Stripe).
 9.  Optimize database indexing for high-traffic scalability.
+10.  Implement dashboard analytics with graphical reports.
 
 ## Project Type
 
