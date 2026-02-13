@@ -20,3 +20,22 @@ A cloud-based web application developed using Flask that enables users to book, 
 - SQL Injection Protection using Parameterized Queries
 
 ---
+## Tech Stack
+
+- Python (Flask)
+- SQLite
+- HTML
+- Internal CSS
+- UUID for Unique Pass Generation
+
+---
+
+## System Overview
+
+The system is designed to simulate a real-world cloud-based transportation management solution. It ensures reliable booking management, prevents ticket loss through digital passes, and provides administrative insights for monitoring usage and revenue.
+
+---
+
+## How to Run
+
+1. Install Flask:
