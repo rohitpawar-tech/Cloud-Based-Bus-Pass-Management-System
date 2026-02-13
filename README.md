@@ -57,6 +57,16 @@ http://127.0.0.1:5000
 
 ---
 
+## Contribution Guidelines
+
+We welcome contributions to improve this project and make it more scalable and production-ready.
+
+### How to Contribute
+
+1. Fork the repository.
+2. Create a new feature branch:
+
+
 ## Project Type
 
 Cloud Computing Internship Project
