@@ -65,6 +65,9 @@ We welcome contributions to improve this project and make it more scalable and p
 
 1. Fork the repository.
 2. Create a new feature branch:
+3. 3. Commit your changes with clear and meaningful messages.
+4. Push the branch to your forked repository.
+5. Submit a Pull Request describing your changes in detail.
 
 
 ## Project Type
