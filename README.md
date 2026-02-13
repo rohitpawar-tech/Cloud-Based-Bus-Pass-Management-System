@@ -121,6 +121,7 @@ Contributors can further enhance this system in the following areas:
 5.  Add multi-language support for wider accessibility.
 6.  Implement role-based access control (Admin, Staff, User).
 7.  Introduce payment gateway integration (Razorpay / Stripe).
+8.  Optimize database indexing for high-traffic scalability.
 
 ## Project Type
 
