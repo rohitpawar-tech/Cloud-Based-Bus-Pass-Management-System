@@ -123,8 +123,9 @@ Contributors can further enhance this system in the following areas:
 7.   Add export functionality (PDF pass download).
 8.  Introduce payment gateway integration (Razorpay / Stripe).
 9.  Optimize database indexing for high-traffic scalability.
-10.  Implement dashboard analytics with graphical reports.
-11.  Add Docker support for containerized deployment.
+10.  Configure CI/CD pipeline using GitHub Actions.
+11.  Implement dashboard analytics with graphical reports.
+12.  Add Docker support for containerized deployment.
 
 ## Project Type
 
