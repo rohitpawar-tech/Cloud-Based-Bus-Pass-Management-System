@@ -119,6 +119,7 @@ Contributors can further enhance this system in the following areas:
 3. Integrate QR code generation for digital pass validation.
 4.  Develop REST APIs for mobile app integration.
 5.  Add multi-language support for wider accessibility.
+6.  Implement role-based access control (Admin, Staff, User).
 
 ## Project Type
 
