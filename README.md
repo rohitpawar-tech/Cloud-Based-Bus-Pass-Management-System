@@ -110,6 +110,12 @@ If you find any bugs or security issues, please open an issue with:
 - Real-time traffic-based route pricing
 - Mobile application version
 
+- ## Additional Contribution Opportunities
+
+Contributors can further enhance this system in the following areas:
+
+1. Implement email verification during user registration.
+
 ## Project Type
 
 Cloud Computing Internship Project
