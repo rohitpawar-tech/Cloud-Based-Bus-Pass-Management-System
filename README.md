@@ -69,6 +69,19 @@ We welcome contributions to improve this project and make it more scalable and p
 4. Push the branch to your forked repository.
 5. Submit a Pull Request describing your changes in detail.
 
+### Contribution Areas
+
+Contributors can help in the following areas:
+
+- UI/UX enhancements
+- Cloud deployment integration (AWS / Azure / Render)
+- Payment gateway integration
+- QR Code-based pass validation
+- API development for mobile integration
+- Security improvements
+- Database optimization for high traffic
+- Role-based access control implementation
+
 
 ## Project Type
 
