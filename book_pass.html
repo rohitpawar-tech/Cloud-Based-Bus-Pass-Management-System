@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Pass</title>
+<style>
+body{text-align:center;font-family:Arial;background:#2c3e50;color:white;padding-top:50px}
+form{background:white;color:black;display:inline-block;padding:30px;border-radius:10px}
+select,button{display:block;margin:10px;padding:10px;width:250px}
+</style>
+</head>
+<body>
+<h2>Book Bus Pass</h2>
+<form method="POST">
+<select name="route" required>
+<option value="">Select Route</option>
+<option>City Center - Station</option>
+<option>Station - Airport</option>
+<option>City Center - University</option>
+</select>
+
+<select name="duration" required>
+<option value="">Select Duration</option>
+<option>Monthly</option>
+<option>Quarterly</option>
+<option>Half-Yearly</option>
+</select>
+
+<button type="submit">Confirm Booking</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Panel</title>
+<style>
+body{text-align:center;font-family:Arial;background:#000;color:white;padding-top:50px}
+table{margin:auto;background:white;color:black;border-collapse:collapse}
+td,th{padding:10px;border:1px solid black}
+</style>
+</head>
+<body>
+<h2>Admin Dashboard</h2>
+<table>
+<tr>
+<th>Name</th><th>Email</th><th>Route</th><th>Duration</th><th>Price</th><th>Pass ID</th>
+</tr>
+{% for r in records %}
+<tr>
+<td>{{r[0]}}</td>
+<td>{{r[1]}}</td>
+<td>{{r[2]}}</td>
+<td>{{r[3]}}</td>
+<td>{{r[4]}}</td>
+<td>{{r[5]}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

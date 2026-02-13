@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Pass | Dashboard</title>
+    <!-- Importing Poppins font for a modern SaaS look -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* --- CSS Variables & Reset --- */
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+            --white: #ffffff;
+            --text-dark: #2d3748;
+            --text-gray: #718096;
+            --bg-color: #f7fafc;
+            --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --card-hover-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --btn-radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            /* Modern Cloud Theme Gradient Background */
+            background: var(--secondary-gradient);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: var(--text-dark);
+        }
+
+        /* --- Main Dashboard Container --- */
+        .dashboard-wrapper {
+            width: 100%;
+            max-width: 900px;
+        }
+
+        .dashboard-card {
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative top bar */
+        .dashboard-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: var(--primary-gradient);
+        }
+
+        /* --- Header Typography --- */
+        .user-welcome {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        p.subtitle {
+            font-size: 1rem;
+            color: var(--text-gray);
+            font-weight: 300;
+        }
+
+        /* --- Navigation Grid --- */
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        /* --- Button/Link Cards --- */
+        .nav-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 20px;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--btn-radius);
+            text-decoration: none;
+            color: var(--text-dark);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        /* Hover Effects */
+        .nav-link:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--card-hover-shadow);
+            border-color: transparent;
+        }
+
+        /* Specific gradient backgrounds on hover for distinct feel */
+        .nav-link:nth-child(1):hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .nav-link:nth-child(2):hover {
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            color: #2d3748;
+        }
+        .nav-link:nth-child(3):hover {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            color: #2d3748;
+        }
+
+        /* Icon Styling */
+        .nav-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover .nav-icon {
+            transform: scale(1.1);
+        }
+
+        .link-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* --- Footer / Logout Section Styling specific --- */
+        .logout-container {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #edf2f7;
+        }
+
+        .nav-link.logout-btn {
+            display: inline-flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            background-color: #f7fafc;
+            color: #e53e3e; /* Red for logout */
+        }
+        
+        .nav-link.logout-btn:hover {
+            background-color: #fff5f5;
+            color: #c53030;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-color: #feb2b2;
+        }
+
+        .nav-link.logout-btn .nav-icon {
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
+
+        /* --- Responsive Tweaks --- */
+        @media (max-width: 600px) {
+            .dashboard-card {
+                padding: 30px 20px;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .nav-grid {
+                grid-template-columns: 1fr; /* Stack cards vertically on mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        <div class="dashboard-card">
+            
+            <header class="user-welcome">
+                <h2>Welcome, {{name}}</h2>
+                <p class="subtitle">Manage your Cloud Bus Pass from here</p>
+            </header>
+
+            <nav class="nav-grid">
+                <!-- Book Pass Link -->
+                <a href="/book_pass" class="nav-link">
+                    <!-- SVG Icon: Ticket/Book -->
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                        <line x1="16" y1="13" x2="8" y2="13"></line>
+                        <line x1="16" y1="17" x2="8" y2="17"></line>
+                        <polyline points="10 9 9 9 8 9"></polyline>
+                    </svg>
+                    <span class="link-title">Book Bus Pass</span>
+                </a>
+
+                <!-- View Pass Link -->
+                <a href="/my_pass" class="nav-link">
+                    <!-- SVG Icon: ID Card -->
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span class="link-title">View My Pass</span>
+                </a>
+            </nav>
+
+            <div class="logout-container">
+                <!-- Logout Link -->
+                <a href="/logout" class="nav-link logout-btn">
+                    <!-- SVG Icon: Log Out -->
+                    <svg class="nav-icon" viewBox="0 0 24 24">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                    <span class="link-title">Logout</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
