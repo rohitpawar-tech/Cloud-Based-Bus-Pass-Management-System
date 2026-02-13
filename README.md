@@ -82,6 +82,13 @@ Contributors can help in the following areas:
 - Database optimization for high traffic
 - Role-based access control implementation
 
+### Code Standards
+
+- Follow clean and readable code practices.
+- Maintain proper file structure.
+- Use parameterized queries to prevent SQL injection.
+- Write modular and reusable functions.
+- Ensure responsiveness for all screen sizes.
 
 ## Project Type
 
