@@ -90,6 +90,17 @@ Contributors can help in the following areas:
 - Write modular and reusable functions.
 - Ensure responsiveness for all screen sizes.
 
+- ### Reporting Issues
+
+If you find any bugs or security issues, please open an issue with:
+
+- Clear description
+- Steps to reproduce
+- Expected behavior
+- Screenshots (if applicable)
+
+---
+
 ## Project Type
 
 Cloud Computing Internship Project
