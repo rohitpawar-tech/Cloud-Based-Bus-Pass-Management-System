@@ -115,7 +115,8 @@ If you find any bugs or security issues, please open an issue with:
 Contributors can further enhance this system in the following areas:
 
 1. Implement email verification during user registration.
-2. 2. Add password reset functionality with secure token validation.
+2. Add password reset functionality with secure token validation.
+3. Integrate QR code generation for digital pass validation.
 
 ## Project Type
 
