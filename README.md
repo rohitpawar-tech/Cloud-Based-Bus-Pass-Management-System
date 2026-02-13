@@ -120,6 +120,7 @@ Contributors can further enhance this system in the following areas:
 4.  Develop REST APIs for mobile app integration.
 5.  Add multi-language support for wider accessibility.
 6.  Implement role-based access control (Admin, Staff, User).
+7.  Introduce payment gateway integration (Razorpay / Stripe).
 
 ## Project Type
 
