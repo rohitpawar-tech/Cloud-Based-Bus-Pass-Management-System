@@ -101,6 +101,15 @@ If you find any bugs or security issues, please open an issue with:
 
 ---
 
+## Future Enhancements
+
+- Integration with online payment systems
+- Cloud database migration (PostgreSQL / MySQL)
+- Containerization using Docker
+- CI/CD pipeline integration
+- Real-time traffic-based route pricing
+- Mobile application version
+
 ## Project Type
 
 Cloud Computing Internship Project
